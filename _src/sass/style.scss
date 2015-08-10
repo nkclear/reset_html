@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+
+@import "compass/reset";
+@import "custom";
+
+@import "top_btn";
+@import "media_queries";
+@import "main";
+	header{
+			nav{
+				margin-bottom: 0;
+				padding-bottom: 0;
+				padding: 15px 0;
+
+				h1{
+					margin: 0;
+					padding: 0;
+					@include media(sp) {
+					padding: 0 0 0 15px
+					}
+				}
+			}
+
+	}
+	#wrapper{
+		margin: 120px 0 0 0;
+	}
+//Bootstrap_off
+.container {
+    max-width: 100%;
+    padding: 15px 0;
+}
+.no-gutter{
+	margin-right: 0;
+	margin-left: 0;
+}
+.no-gutter > [class*='col-']{
+	padding-right: 0;
+	padding-left: 0;
+}
+	.jumbotron{
+		padding-top: 0;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		background: none;
+	}
+	.navbar-default{
+					margin-bottom: 0;
+					border-bottom: 1px solid #efefef;
+					background: #fff;
+	}
+	.navbar-collapse{
+		max-height: none;
+		border: none;
+		padding-bottom: 0;
+		margin-bottom: 0;
+	}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: #fff;
+}
+	#visual{
+		height: 650px;
+		background: url(/img/visual.jpg) center 0 no-repeat;
+		background-size: cover;
+		//background-attachment: fixed;
+		@include media(sp) {
+			
+		}
+		
+	}
+
+	.top_box{
+		text-align: center;
+		.col{
+			height: 300px;
+		}
+		.col01{background: url(/img/top/col01.jpg) center 0 no-repeat;background-size:cover;}
+		.col02{background: url(/img/top/col02.jpg) center 0 no-repeat;background-size:cover;}
+		.col03{background: url(/img/top/col03.jpg) center 0 no-repeat;background-size:cover;}
+	}
+
+.news_box,.access_box{
+	text-align: center;
+	margin:60px auto;
+	h2{
+		font-size: yf(16);
+	}
+	p.subtitle{
+		font-size: yf(12);
+	}
+	.news{
+		width:600px;
+		margin: auto;
+		text-align: left;
+			@include media(sp) {
+				width:100%;
+			padding: 0 30px;
+			}
+		article{
+			@include pie-clearfix;
+			border-bottom: 1px solid #eee;
+			padding: 20px 0 0 0;
+		
+		}
+		p.date{
+			float: left;
+			margin-right: 40px;
+			@include media(sp) {
+				float: none;
+				margin-right: 0;
+			}
+		}
+		p.news_txt{
+			float: left;
+			@include media(sp) {
+				float: none;
+			}
+		}
+	}
+	button{
+		margin-top: 30px;
+		text-align: center;
+		font-size: 12px;
+	}
+}
+
+#gmap{
+	width:100%;
+	height: 400px;
+}
+
+#pagetop{
+	position: fixed;
+	right: 30px;
+	bottom: 30px;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+footer{
+	padding:50px 0 50px 0;
+	background: #fafafa;
+	ul.flink{
+		@include pie-clearfix;
+		li{
+			a{
+				float: left;
+			}
+		}
+	}
+	.copyright{
+		font-size: yf(11);
+	}
+}
+
+
+
+	
