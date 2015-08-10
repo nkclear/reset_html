@@ -1,12 +1,15 @@
 @charset "utf-8";
 
-
+//compass
 @import "compass/reset";
+//bootstrap_custom
 @import "custom";
-
-@import "top_btn";
+//media_queries
 @import "media_queries";
+//setting default
 @import "main";
+
+
 	header{
 			nav{
 				margin-bottom: 0;
